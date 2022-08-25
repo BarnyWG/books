@@ -1,0 +1,1 @@
+?&amp;subject=Anmeldung zur Bücherverwaltung&amp;body=Ich moechte freigeschaltet werden fuer Books%0d%0aName: _________%0d%0aVorname: _________%0d%0aAnmeldenamen: __________%0d%0aeMail: _________%0d%0a  

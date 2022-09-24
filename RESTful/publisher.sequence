@@ -1,6 +1,0 @@
-    "%pb_id%":{
-        "name":"%pb_name%",
-        "street":"%pb_street%",
-        "location":"%pb_location%",
-        "postindex":"%pb_postindex%"
-    }

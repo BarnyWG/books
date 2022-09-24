@@ -1,5 +1,0 @@
-    "%au_id%":{
-        "lastname":"%au_lastname%",
-        "firstname":"%au_firstname%",
-        "biografie":"%au_biografie%"
-    }

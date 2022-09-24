@@ -1,8 +1,0 @@
-    "%st_id%":{
-        "name":"%st_name%",
-        "height":"%st_height%",
-        "width":"%st_width%",
-        "deep":"%st_deep%",
-        "location":"%st_location%",
-        "capa":"%st_capa%"        
-    }

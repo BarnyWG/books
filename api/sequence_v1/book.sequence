@@ -13,7 +13,7 @@
         "width":"%bo_width%",
         "deep":"%bo_deep%",
         "price":"%bo_price%",
-        "author":[$authors$],
+        "autor":[$authors$],
         "weigth":"%bo_weight_gr%",
         "conferred":"%bo_conferred%",
         "comment":"%bo_comment%"

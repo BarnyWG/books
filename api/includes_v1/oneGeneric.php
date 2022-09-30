@@ -20,7 +20,7 @@ function oneGeneric($zielID,$target,$id) {
         $sequence=str_replace($dummy[0],stripslashes($dummy1), $sequence);
     }
     #Rückgabe JSON
-    return '{'.$sequence.'}';
+    return ''.$sequence.'';
   }
   return 'error';
 }

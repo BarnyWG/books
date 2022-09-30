@@ -1,3 +1,4 @@
-    "%co_id%":{
+    {
+        "cover":"%co_id%",
         "type":"%co_type%"
     }

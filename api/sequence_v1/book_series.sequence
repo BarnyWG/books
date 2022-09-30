@@ -1,3 +1,4 @@
-    "%bs_id%":{
+    {
+        "serie":"%bs_id%",
         "name":"%bs_name%"
     }

@@ -51,7 +51,7 @@ function oneBook($zielID) {
     }
     $sequence=str_replace('$authors$', $autoren, $sequence);
     #Rückgabe JSON
-    return '{'.$sequence.'}';
+    return ''.$sequence.'';
   }
   return 'error';
 }

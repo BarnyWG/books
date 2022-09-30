@@ -31,13 +31,13 @@ function getRequest() {
   $befehle =$_SERVER['REQUEST_URI'];
  
   if (strpos($befehle, "/v1/book")) $json = onBook($befehle);
-  if (strpos($befehle, "/v1/autor")) $json = onGeneric($befehle,'autor','au_id');
-  if (strpos($befehle, "/v1/publisher")) $json = onGeneric($befehle,'publisher','pb_id');
-  if (strpos($befehle, "/v1/serie")) $json = onGeneric($befehle,'book_series','bs_id');
-  if (strpos($befehle, "/v1/genre")) $json = onGeneric($befehle,'genre','ge_id');
-  if (strpos($befehle, "/v1/cover")) $json = onGeneric($befehle,'cover','co_id');
-  if (strpos($befehle, "/v1/bind")) $json = onGeneric($befehle,'bind','bi_id');
-  if (strpos($befehle, "/v1/storage")) $json = onGeneric($befehle,'storage','st_id');
+  if (strpos($befehle, "/v1/autor")) $json = onGeneric($befehle,'autor','au_id','autor');
+  if (strpos($befehle, "/v1/publisher")) $json = onGeneric($befehle,'publisher','pb_id','pubisher');
+  if (strpos($befehle, "/v1/serie")) $json = onGeneric($befehle,'book_series','bs_id','series');
+  if (strpos($befehle, "/v1/genre")) $json = onGeneric($befehle,'genre','ge_id','genre');
+  if (strpos($befehle, "/v1/cover")) $json = onGeneric($befehle,'cover','co_id','cover');
+  if (strpos($befehle, "/v1/bind")) $json = onGeneric($befehle,'bind','bi_id','bindings');
+  if (strpos($befehle, "/v1/storage")) $json = onGeneric($befehle,'storage','st_id','storages');
 
 # Seitenbau
   if ($json=='error') {
@@ -71,14 +71,14 @@ function onBook($uri) {
   }
 }
 
- function onGeneric($uri,$target,$id) {
+ function onGeneric($uri,$target,$id,$titel) {
   $suche= strrpos($uri, '/');
   $gefunden = substr($uri,$suche+1);
   if (is_numeric($gefunden)) { # Zahl am Ende gefunden also einzelnes Buch Listen
     return oneGeneric($gefunden,$target,$id);
   }else {
     # alle Bücher Listen;
-    return allGeneric($target,$id);
+    return allGeneric($target,$id,$titel);
   }
  }
  

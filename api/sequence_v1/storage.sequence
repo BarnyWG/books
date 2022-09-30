@@ -1,4 +1,5 @@
-    "%st_id%":{
+    {
+        "storage":"%st_id%",
         "name":"%st_name%",
         "height":"%st_height%",
         "width":"%st_width%",

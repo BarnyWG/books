@@ -1,4 +1,6 @@
-    "%bo_id%":{
+
+    {
+        "book":"%bo_id%",
         "cover":"%bo_co_id%",
         "genre":"%bo_ge_id%",
         "publisher":"%bo_pb_id%",

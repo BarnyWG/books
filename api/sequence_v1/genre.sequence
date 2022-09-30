@@ -1,3 +1,4 @@
-    "%ge_id%":{
+    {
+        "genre":"%ge_id%",
         "type":"%ge_type%"
     }

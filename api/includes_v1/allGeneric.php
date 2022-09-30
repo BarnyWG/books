@@ -1,5 +1,5 @@
 <?php
-function allGeneric($target,$id) {
+function allGeneric($target,$id,$titel) {
   # Lade Sequence Datei in String
   $sequence = file_get_contents('../sequence_v1/'.$target.'.sequence');
   $mapping = file('../mapping_v1/'.$target.'.mapping');
@@ -9,7 +9,7 @@ function allGeneric($target,$id) {
   $result=$verbindung->query("SELECT * from {$target}");
   $i2 = $result->rowCount();
   $t2 = 0;
-  $all = '{';
+  $all = "{ \"{$titel}\":[";
   if($result->rowCount()) { # Daten gefunden Anpassung im String vornehmen
 
     $zeilen=$result->fetchAll(PDO::FETCH_ASSOC);
@@ -29,7 +29,7 @@ function allGeneric($target,$id) {
         if($t2<$i2) $all .=',';
     }
     #Rückgabe JSON
-    return $all .='}';
+    return $all .=']}';
   }
   return 'error';
 }

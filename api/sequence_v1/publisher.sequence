@@ -1,4 +1,5 @@
-    "%pb_id%":{
+    {
+        "publisher":"%pb_id%",
         "name":"%pb_name%",
         "street":"%pb_street%",
         "location":"%pb_location%",

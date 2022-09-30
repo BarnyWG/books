@@ -139,7 +139,7 @@ Die Tabellen in der DB sind folgend Definert.
     `au_lastname` varchar(50) COLLATE latin1_german2_ci NOT NULL,
     `au_firstname` varchar(50) COLLATE latin1_german2_ci DEFAULT NULL,
     `au_biografie` varchar(255) COLLATE latin1_german2_ci DEFAULT NULL
-    ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german2_ci;    CREATE TABLE 'autor'
+    ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german2_ci;
     
 ### Tabelle bind
 

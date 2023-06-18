@@ -62,7 +62,7 @@ if($suche=='' && $suche2<>'') // kein Buch gesucht aber Regal
 $result=$verbindung->query($strsql);
 #echo $strsql;
 
-if($result-rowCount())
+if($result->rowCount())
 {
 	echo '<table border="1">';
     echo '<tr><th>Buchtitel</th><th>Regal</th><th>Standort</th><th>Verlagern ==></th>';
